@@ -1,0 +1,44 @@
+/*main para el mate 320px*/
+.fotoMate{
+    width: 12rem;
+    height: 12rem;
+}
+/*hover fotoMate*/
+.fotoMate:hover{
+    transform: translate(0, -1rem);
+    width: 13rem;
+    height: 13rem;
+}
+/* sigo main para mate*/
+.contenedorMate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.cartaMate{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid $color-enlace;
+    margin: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: $color-navFooter;
+}    
+.cartaMate div h2, p{
+    color: $color-enlace;
+    padding: 0.2rem;
+    font-family:  'Lato',sans-serif;
+}
+@media screen and(min-width: 768px) {
+    .cartaMate{
+    flex-direction: row-reverse;
+    width: 30rem;
+    padding: 0.5rem;
+    justify-content: flex-end;
+    }
+}
+@media screen and(min-width: 1024px) {
+    .cartaMate{
+        width: 29rem;
+    }
+}

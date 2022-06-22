@@ -1,0 +1,75 @@
+/* empiezo main catering*/
+
+.paraMain{
+    width: 100%;
+}
+#encabezadoCatering{
+    margin-top: -10rem;
+}
+.fotoCatering{
+    width: 15rem;
+    height: 20rem;
+}
+.contenedorCatering{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cartaCatering{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3.9rem;
+    border: 2px solid $color-enlace;
+    background-color: $color-navFooter;
+    padding: 1.5rem 1rem;
+    width: 18rem;
+}
+.textoCatering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textoCatering ul li{
+    list-style: none;
+    font-family:  'Lato',sans-serif;
+    color: $color-enlace;
+
+}
+.textoCatering h1{
+    font-family:  'Lato',sans-serif;
+    color: $color-enlace;
+}
+.textoCatering a{
+    text-decoration: none;
+    font-family:  'Lato',sans-serif;
+    background-color: $color-enlace;
+    color: $color-navFooter;
+    padding: 5px;
+    border: 2px solid pink ;
+    border-radius: 10%;
+}
+/*hover textoCatering a*/
+.textoCatering a:hover{
+    border: 2px solid $color-enlace;
+    background-color: $color-hover;
+}
+/*media 768px*/
+@media screen and (min-width: 768px){
+    .contenedorCatering{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .cartaCatering{
+        height: 40rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .cartaCatering{
+        width: 25rem;
+    }
+}
+

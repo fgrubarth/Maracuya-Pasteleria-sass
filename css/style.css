@@ -1,0 +1,379 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*empiezo estructura*/
+.grid {
+  width: 100%;
+  grid-template-areas: "hearder" "main" "footer"; }
+
+/*empiezo header*/
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  grid-area: header;
+  /*hover nav*/
+  /*animacion logo nav*/ }
+  header .logo {
+    height: 6rem;
+    width: 8rem; }
+  header .logoRedes {
+    display: none; }
+  header .text- {
+    margin: 0 1rem;
+    color: #987844 !important;
+    font-weight: bold !important; }
+  header .color- {
+    background-color: whitesmoke; }
+  header .botonMenu:hover {
+    border: 2px solid #ff607b !important; }
+  header .text-:hover {
+    color: #ff607b !important; }
+  header .logo {
+    -webkit-animation: rotate-vert-center 1s linear 1s both;
+    animation: rotate-vert-center 1s linear 1s both; }
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+  @media screen and (min-width: 1024px) {
+    header .logoRedes {
+      display: block; } }
+
+/*empiezo main indez*/
+main {
+  grid-area: main;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /*hover formulario index*/
+  /*hover boton arriba*/ }
+  main .encabezadoMain {
+    width: 100%; }
+  main .flexMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  main .contenedor {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  main .contenedor .fotoMain {
+    height: 12rem;
+    width: 16rem;
+    margin: 0.5rem;
+    border: 2px solid #987844; }
+  main h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #6c5837;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  main .servicioInterior {
+    margin: 1rem;
+    border: 2px solid #987844;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #987844; }
+  main .servicioInterior a {
+    text-decoration: none;
+    color: #ff607b; }
+  main .arriba .boton {
+    margin: 2rem 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 0.4rem;
+    border-radius: 100%;
+    border: 2px solid #987844;
+    color: #ff607b; }
+  main .arriba {
+    margin: 1rem 0; }
+  main .servicioInterior a:hover {
+    color: #fda085; }
+  main .arriba .boton:hover {
+    color: #6c5837;
+    border: 2px solid #ff607b; }
+  @media screen and (min-width: 768px) {
+    main .contenedor {
+      flex-direction: row; }
+    main .flexMain .contenedor .fotoMain {
+      width: 15rem;
+      height: 14rem; } }
+  @media screen and (min-width: 1024px) {
+    main .flexMain .contenedor .fotoMain {
+      width: 20rem;
+      height: 18rem;
+      margin: 2rem; } }
+  @media screen and (min-width: 1440px) {
+    main .flexMain .contenedor .fotoMain {
+      width: 23rem;
+      height: 20rem; } }
+
+footer {
+  grid-area: footer;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* hover enlace footer*/
+  /*animacion logo nav*/ }
+  footer .logo {
+    height: 6rem;
+    width: 8rem; }
+  footer p {
+    font-size: xx-small;
+    font-family: 'Lato', sans-serif; }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 1rem; }
+  footer ul li {
+    list-style: none; }
+  footer ul li img {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.5rem; }
+  footer ul li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #987844;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small; }
+  footer .derechos {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+  footer .derechos a {
+    text-decoration: none;
+    color: #a4a4a1; }
+  footer .derechos p, footer span {
+    font-family: 'Lato',sans-serif;
+    color: #a4a4a1; }
+  footer ul li a:hover {
+    color: #ff607b; }
+  footer span a:hover {
+    color: #ff607b; }
+  footer .logo {
+    -webkit-animation: rotate-vert-center 1s linear 1s both;
+    animation: rotate-vert-center 1s linear 1s both; }
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+  @media screen and (min-width: 768px) {
+    footer {
+      align-items: flex-start; }
+      footer .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start; } }
+
+/*empiezo main productos*/
+.flexMainproductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*hover fotosProductos*/ }
+  .flexMainproductos .tituloProductos {
+    font-family: 'Lato',sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .flexMainproductos .tortasTartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .flexMainproductos .contenedorProductos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid #987844;
+    background-color: whitesmoke;
+    width: 18rem; }
+  .flexMainproductos .foto {
+    height: 10rem;
+    width: 10rem; }
+  .flexMainproductos .parrafoProductos {
+    padding: 0 1rem;
+    color: #987844;
+    font-family: 'Lato',sans-serif; }
+  .flexMainproductos .fotoProductos .foto:hover {
+    transform: translate(0, -2rem);
+    width: 12rem;
+    height: 12rem; }
+
+@media screen and (min-width: 768px) {
+  .tortasTartas .contenedorProductos {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 35rem; } }
+
+@media screen and (min-width: 1024px) {
+  .tortasTartas .contenedorProductos {
+    width: 29rem; } }
+
+@media screen and (min-width: 1440px) {
+  .tortasTartas .contenedorProductos {
+    width: 40rem; } }
+
+/* empiezo main catering*/
+.paraMain {
+  width: 100%; }
+
+#encabezadoCatering {
+  margin-top: -10rem; }
+
+.fotoCatering {
+  width: 15rem;
+  height: 20rem; }
+
+.contenedorCatering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.cartaCatering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.9rem;
+  border: 2px solid #987844;
+  background-color: whitesmoke;
+  padding: 1.5rem 1rem;
+  width: 18rem; }
+
+.textoCatering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.textoCatering ul li {
+  list-style: none;
+  font-family: 'Lato',sans-serif;
+  color: #987844; }
+
+.textoCatering h1 {
+  font-family: 'Lato',sans-serif;
+  color: #987844; }
+
+.textoCatering a {
+  text-decoration: none;
+  font-family: 'Lato',sans-serif;
+  background-color: #987844;
+  color: whitesmoke;
+  padding: 5px;
+  border: 2px solid pink;
+  border-radius: 10%; }
+
+/*hover textoCatering a*/
+.textoCatering a:hover {
+  border: 2px solid #987844;
+  background-color: #ff607b; }
+
+/*media 768px*/
+@media screen and (min-width: 768px) {
+  .contenedorCatering {
+    flex-direction: row;
+    align-items: flex-start; }
+  .cartaCatering {
+    height: 40rem; } }
+
+@media screen and (min-width: 1024px) {
+  .cartaCatering {
+    width: 25rem; } }
+
+/*main para el mate 320px*/
+.fotoMate {
+  width: 12rem;
+  height: 12rem; }
+
+/*hover fotoMate*/
+.fotoMate:hover {
+  transform: translate(0, -1rem);
+  width: 13rem;
+  height: 13rem; }
+
+/* sigo main para mate*/
+.contenedorMate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cartaMate {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 2px solid #987844;
+  margin: 1.5rem;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke; }
+
+.cartaMate div h2, p {
+  color: #987844;
+  padding: 0.2rem;
+  font-family: 'Lato',sans-serif; }
+
+@media screen and (min-width: 768px) {
+  .cartaMate {
+    flex-direction: row-reverse;
+    width: 30rem;
+    padding: 0.5rem;
+    justify-content: flex-end; } }
+
+@media screen and (min-width: 1024px) {
+  .cartaMate {
+    width: 29rem; } }
+
+/*contancto 320*/
+/*tablas*/
+.texto {
+  color: #33291a; }
+
+.tabla {
+  border: #987844 !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 6rem;
+  margin-top: 1rem; }

@@ -1,0 +1,62 @@
+/*empiezo main productos*/ 
+.flexMainproductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+.tituloProductos{
+    font-family:  'Lato',sans-serif;
+    font-weight: bold;
+    text-align: center;
+ }
+.tortasTartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorProductos{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid $color-enlace;
+    background-color: $color-navFooter;
+    width: 18rem;
+} 
+.foto{
+    height: 10rem;
+    width: 10rem;
+}
+
+
+.parrafoProductos{
+    padding: 0 1rem;
+    color: $color-enlace;
+    font-family:  'Lato',sans-serif;
+}
+/*hover fotosProductos*/
+.fotoProductos .foto:hover{
+   transform: translate(0, -2rem);
+   width: 12rem;
+   height: 12rem;
+}
+}
+@media screen and (min-width: 768px){ 
+    .tortasTartas .contenedorProductos{
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        width: 35rem;
+} 
+}
+@media screen and (min-width: 1024px){
+    .tortasTartas .contenedorProductos{
+        width: 29rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .tortasTartas .contenedorProductos{
+        width: 40rem;
+    }
+}

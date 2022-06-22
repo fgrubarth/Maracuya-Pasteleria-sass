@@ -1,0 +1,21 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "utilities/variables";
+/*empiezo estructura*/
+.grid{
+    width: 100%;
+    grid-template-areas: "hearder"
+    "main"
+    "footer";
+}
+@import "utilities/header";
+@import "utilities/indexMain";
+@import "utilities/footer";
+@import "utilities/productosMain";
+@import "utilities/catering";
+@import "utilities/paraMate";
+@import "utilities/contacto";

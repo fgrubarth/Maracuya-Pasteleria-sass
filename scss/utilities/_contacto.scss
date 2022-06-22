@@ -1,0 +1,13 @@
+/*contancto 320*/
+/*tablas*/
+.texto{
+    color:#33291a;
+}
+.tabla{
+    border: $color-enlace !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 6rem;
+    margin-top: 1rem;
+}
