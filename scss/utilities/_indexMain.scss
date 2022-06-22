@@ -1,5 +1,9 @@
 /*empiezo main indez*/
 main{
+    .alto{
+        height: 20rem !important;
+        
+    }
     grid-area: main;
     background-image: $color-main;
     .encabezadoMain{
@@ -68,6 +72,10 @@ main{
         border: 2px solid $color-hover;
     }
     @media screen and (min-width: 768px){
+        .alto{
+            height: 30rem !important;
+            margin-top: -5rem !important;
+        }
         .contenedor{
             flex-direction: row;
         }
@@ -77,16 +85,21 @@ main{
         }
     }
     @media screen and (min-width: 1024px){
+        .alto{
+            height: 35rem !important;
+            margin-top: -5rem !important;
+        }
         .flexMain .contenedor .fotoMain{
             width: 20rem;
             height: 18rem;
-            margin: 2rem;
+            margin: 0.5rem;
         }
     }
     @media screen and (min-width: 1440px){
         .flexMain .contenedor .fotoMain{
             width: 23rem;
             height: 20rem;
+            margin: 2rem;
         }
     }
 }
