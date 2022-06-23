@@ -9,58 +9,56 @@
     .logo{
         height: 6rem;
         width: 8rem;
-    }
+        }
     .logoRedes{
         display: none;
-    }
+        }
     .text-{
         margin: 0 1rem;
         color: $color-enlace !important;
         font-weight: bold !important;
-    }
+        }
     .color-{
         background-color: $color-navFooter;
-    }
-        
-        /*hover nav*/
+        }
+            
+            /*hover nav*/
     .botonMenu:hover{
-            border: 2px solid $color-hover !important;
+        border: 2px solid $color-hover !important;
         }
     .text-:hover{
-            color: #ff607b !important;
-            }
-
-        /*animacion logo nav*/
-    .logo {
-            -webkit-animation: rotate-vert-center 1s linear 1s both;
-                    animation: rotate-vert-center 1s linear 1s both;
+        color: #ff607b !important;
         }
-        
-         @-webkit-keyframes rotate-vert-center {
+
+            /*animacion logo nav*/
+    .logo {
+        -webkit-animation: rotate-vert-center 1s linear 1s both;
+        animation: rotate-vert-center 1s linear 1s both;
+        }
+            
+        @-webkit-keyframes rotate-vert-center {
             0% {
               -webkit-transform: rotateY(0);
-                      transform: rotateY(0);
-            }
+              transform: rotateY(0);
+                }
             100% {
               -webkit-transform: rotateY(360deg);
-                      transform: rotateY(360deg);
-            }
-          }
-          @keyframes rotate-vert-center {
+              transform: rotateY(360deg);
+                }
+              }
+        @keyframes rotate-vert-center {
             0% {
               -webkit-transform: rotateY(0);
-                      transform: rotateY(0);
-            }
+              transform: rotateY(0);
+                }
             100% {
               -webkit-transform: rotateY(360deg);
-                      transform: rotateY(360deg);
-            }
-          }
-          @media screen and (min-width: 1024px){
-            .logoRedes{
+              transform: rotateY(360deg);
+                }
+              }
+    @media screen and (min-width: 1024px){
+        .logoRedes{
               display: block;
-          }
-        
-          }
-          
+                }
+              }         
 }

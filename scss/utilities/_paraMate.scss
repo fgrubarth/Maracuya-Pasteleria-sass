@@ -24,10 +24,16 @@
     text-align: center;
     background-color: $color-navFooter;
 }    
-.cartaMate div h2, p{
-    color: $color-enlace;
-    padding: 0.2rem;
-    font-family:  'Lato',sans-serif;
+.cartaMate{ 
+    div{ 
+        h2{ 
+            p{
+                color: $color-enlace;
+                padding: 0.2rem;
+                font-family:  'Lato',sans-serif;
+            }
+        }   
+    }
 }
 @media screen and(min-width: 768px) {
     .cartaMate{

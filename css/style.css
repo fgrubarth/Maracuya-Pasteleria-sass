@@ -60,7 +60,6 @@ header {
 main {
   grid-area: main;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  /*hover formulario index*/
   /*hover boton arriba*/ }
   main .alto {
     height: 20rem !important; }
@@ -77,11 +76,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  main .contenedor .fotoMain {
-    height: 12rem;
-    width: 16rem;
-    margin: 0.5rem;
-    border: 2px solid #987844; }
+    main .contenedor .fotoMain {
+      height: 12rem;
+      width: 16rem;
+      margin: 0.5rem;
+      border: 2px solid #987844; }
   main h1 {
     margin: 1.5rem 0;
     text-align: center;
@@ -93,25 +92,26 @@ main {
     display: flex;
     align-items: center;
     background-color: whitesmoke;
-    color: #987844; }
-  main .servicioInterior a {
-    text-decoration: none;
-    color: #ff607b; }
-  main .arriba .boton {
-    margin: 2rem 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: whitesmoke;
-    padding: 0.4rem;
-    border-radius: 100%;
-    border: 2px solid #987844;
-    color: #ff607b; }
+    color: #987844;
+    /*hover formulario index*/ }
+    main .servicioInterior a {
+      text-decoration: none;
+      color: #ff607b; }
+    main .servicioInterior a:hover {
+      color: #fda085; }
   main .arriba {
     margin: 1rem 0; }
-  main .servicioInterior a:hover {
-    color: #fda085; }
+    main .arriba .boton {
+      margin: 2rem 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: whitesmoke;
+      padding: 0.4rem;
+      border-radius: 100%;
+      border: 2px solid #987844;
+      color: #ff607b; }
   main .arriba .boton:hover {
     color: #6c5837;
     border: 2px solid #ff607b; }
@@ -247,21 +247,18 @@ footer {
     transform: translate(0, -2rem);
     width: 12rem;
     height: 12rem; }
-
-@media screen and (min-width: 768px) {
-  .tortasTartas .contenedorProductos {
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    width: 35rem; } }
-
-@media screen and (min-width: 1024px) {
-  .tortasTartas .contenedorProductos {
-    width: 29rem; } }
-
-@media screen and (min-width: 1440px) {
-  .tortasTartas .contenedorProductos {
-    width: 40rem; } }
+  @media screen and (min-width: 768px) {
+    .flexMainproductos .tortasTartas .contenedorProductos {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      width: 35rem; } }
+  @media screen and (min-width: 1024px) {
+    .flexMainproductos .tortasTartas .contenedorProductos {
+      width: 29rem; } }
+  @media screen and (min-width: 1440px) {
+    .flexMainproductos .tortasTartas .contenedorProductos {
+      width: 40rem; } }
 
 /* empiezo main catering*/
 .paraMain {
@@ -315,7 +312,6 @@ footer {
   border: 2px solid pink;
   border-radius: 10%; }
 
-/*hover textoCatering a*/
 .textoCatering a:hover {
   border: 2px solid #987844;
   background-color: #ff607b; }
@@ -326,11 +322,13 @@ footer {
     flex-direction: row;
     align-items: flex-start; }
   .cartaCatering {
-    height: 40rem; } }
+    height: 40rem;
+    width: 25rem; } }
 
 @media screen and (min-width: 1024px) {
   .cartaCatering {
-    width: 25rem; } }
+    width: 30rem;
+    height: 37rem; } }
 
 /*main para el mate 320px*/
 .fotoMate {
@@ -358,7 +356,7 @@ footer {
   text-align: center;
   background-color: whitesmoke; }
 
-.cartaMate div h2, p {
+.cartaMate div h2 p {
   color: #987844;
   padding: 0.2rem;
   font-family: 'Lato',sans-serif; }

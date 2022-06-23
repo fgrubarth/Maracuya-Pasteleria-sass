@@ -36,27 +36,35 @@
     font-family:  'Lato',sans-serif;
 }
 /*hover fotosProductos*/
-.fotoProductos .foto:hover{
-   transform: translate(0, -2rem);
-   width: 12rem;
-   height: 12rem;
-}
+.fotoProductos{ 
+    .foto:hover{
+        transform: translate(0, -2rem);
+        width: 12rem;
+        height: 12rem;
+    }
 }
 @media screen and (min-width: 768px){ 
-    .tortasTartas .contenedorProductos{
-        justify-content: flex-end;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        width: 35rem;
-} 
+    .tortasTartas{ 
+        .contenedorProductos{
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            width: 35rem;
+        } 
+    }
 }
 @media screen and (min-width: 1024px){
-    .tortasTartas .contenedorProductos{
-        width: 29rem;
+    .tortasTartas{ 
+        .contenedorProductos{
+            width: 29rem;
+        }
     }
 }
 @media screen and (min-width: 1440px){
-    .tortasTartas .contenedorProductos{
-        width: 40rem;
+    .tortasTartas{ 
+        .contenedorProductos{
+            width: 40rem;
+        }
     }
+}
 }
