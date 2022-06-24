@@ -1,7 +1,6 @@
 /*main para el mate 320px*/
 .fotoMate{
-    width: 12rem;
-    height: 12rem;
+    @include foto320;
 }
 /*hover fotoMate*/
 .fotoMate:hover{
@@ -11,30 +10,17 @@
 }
 /* sigo main para mate*/
 .contenedorMate{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include contenedor320;
     }
 .cartaMate{
-    display: flex;
-    flex-direction: column-reverse;
-    border: 2px solid $color-enlace;
-    margin: 1.5rem;
-    align-items: center;
-    text-align: center;
-    background-color: $color-navFooter;
-}    
-.cartaMate{ 
-    div{ 
-        h2{ 
-            p{
-                color: $color-enlace;
-                padding: 0.2rem;
-                font-family:  'Lato',sans-serif;
-            }
-        }   
+    @include carta320;
+    p{
+    @include parrafo320;
     }
-}
+    h2{
+        @include titulos320
+    }
+}    
 @media screen and(min-width: 768px) {
     .cartaMate{
     flex-direction: row-reverse;

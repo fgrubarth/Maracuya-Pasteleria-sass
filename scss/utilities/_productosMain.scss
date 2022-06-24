@@ -5,14 +5,11 @@
     align-items: center;
     justify-content: center;
 .tituloProductos{
-    font-family:  'Lato',sans-serif;
-    font-weight: bold;
-    text-align: center;
+    @include titulos320;
+    text-transform: uppercase;
  }
 .tortasTartas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include contenedor320;
 }
 .contenedorProductos{
     display: flex;
@@ -25,15 +22,15 @@
     width: 18rem;
 } 
 .foto{
-    height: 10rem;
-    width: 10rem;
+    @include foto320;
 }
-
-
 .parrafoProductos{
-    padding: 0 1rem;
-    color: $color-enlace;
-    font-family:  'Lato',sans-serif;
+    p{
+    @include parrafo320;
+    }
+    h2{
+        @include titulos320
+    }
 }
 /*hover fotosProductos*/
 .fotoProductos{ 

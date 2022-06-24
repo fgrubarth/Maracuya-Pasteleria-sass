@@ -4,7 +4,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import "utilities/variables";
+//mixin
+@mixin foto320 {
+    height: 10rem;
+    width: 10rem;
+}
+@mixin contenedor320 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin carta320 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid $color-enlace;
+    background-color: $color-navFooter;
+    width: 18rem;
+}
+@mixin parrafo320 {
+        padding: 0 1rem;
+        color: $color-enlace;
+        font-family:  'Lato',sans-serif;
+}
+@mixin titulos320 {
+        font-weight: bolder;
+        color: $color-enlace;
+        text-align: center;
+        text-transform: uppercase;
+
+}
 /*empiezo estructura*/
 .grid{
     width: 100%;
@@ -12,6 +43,8 @@
     "main"
     "footer";
 }
+//import
+@import "utilities/variables";
 @import "utilities/header";
 @import "utilities/indexMain";
 @import "utilities/footer";
