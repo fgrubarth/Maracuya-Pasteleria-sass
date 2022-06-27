@@ -36,6 +36,21 @@
         text-transform: uppercase;
 
 }
+/*extend*/
+%cartaCatering{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3.9rem;
+    padding: 1.5rem 1rem;
+    width: 18rem;
+}
+%textoCatering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
 /*empiezo estructura*/
 .grid{
     width: 100%;

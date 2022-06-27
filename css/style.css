@@ -4,6 +4,21 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*extend*/
+.cartaCatering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.9rem;
+  padding: 1.5rem 1rem;
+  width: 18rem; }
+
+.textoCatering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /*empiezo estructura*/
 .grid {
   width: 100%;
@@ -287,20 +302,8 @@ footer {
   width: 100%; }
 
 .cartaCatering {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3.9rem;
   border: 2px solid #987844;
-  background-color: whitesmoke;
-  padding: 1.5rem 1rem;
-  width: 18rem; }
-
-.textoCatering {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-color: whitesmoke; }
 
 .textoCatering ul li {
   list-style: none;
@@ -330,13 +333,14 @@ footer {
     flex-direction: row;
     align-items: flex-start; }
   .cartaCatering {
-    height: 40rem;
-    width: 25rem; } }
+    width: 20rem;
+    height: 40rem; }
+    .cartaCatering .link {
+      margin-top: 1.7rem; } }
 
-@media screen and (min-width: 1024px) {
-  .cartaCatering {
-    width: 30rem;
-    height: 37rem; } }
+@media screen and (min-width: 834px) {
+  .cartaCatering .link {
+    margin-top: 0; } }
 
 /*main para el mate 320px*/
 .fotoMate {
