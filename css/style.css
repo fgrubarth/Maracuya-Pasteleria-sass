@@ -22,7 +22,9 @@
 /*empiezo estructura*/
 .grid {
   width: 100%;
-  grid-template-areas: "hearder" "main" "footer"; }
+  grid-template-areas: "hearder"
+ "main"
+ "footer"; }
 
 /*empiezo header*/
 header {
