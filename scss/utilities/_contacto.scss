@@ -5,11 +5,11 @@
     font-family:  'Lato',sans-serif;
 }
 .tabla{
+    align-items: center;
     border: $color-enlace !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-left: 6rem;
     margin-top: 1rem;
 }
 .contacto{

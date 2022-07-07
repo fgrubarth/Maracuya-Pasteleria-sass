@@ -157,21 +157,24 @@ main {
 footer {
   grid-area: footer;
   background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   /* hover enlace footer*/
   /*animacion logo nav*/ }
   footer .logo {
     height: 6rem;
-    width: 8rem; }
+    width: 8rem;
+    margin-bottom: 2rem; }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   footer p {
-    font-size: xx-small;
+    font-size: small;
     font-family: 'Lato', sans-serif; }
   footer ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     padding: 0 1rem; }
   footer ul li {
@@ -195,6 +198,7 @@ footer {
     text-decoration: none;
     color: #a4a4a1; }
   footer .derechos p, footer span {
+    font-size: smaller;
     font-family: 'Lato',sans-serif;
     color: #a4a4a1; }
   footer ul li a:hover {
@@ -220,13 +224,6 @@ footer {
   100% {
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg); } }
-  @media screen and (min-width: 768px) {
-    footer {
-      align-items: flex-start; }
-      footer .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: start; } }
 
 /*empiezo main productos*/
 .flexMainproductos {
@@ -396,11 +393,11 @@ footer {
   font-family: 'Lato',sans-serif; }
 
 .tabla {
+  align-items: center;
   border: #987844 !important;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding-left: 6rem;
   margin-top: 1rem; }
 
 .contacto h1 {

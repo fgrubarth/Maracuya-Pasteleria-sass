@@ -4,18 +4,22 @@ footer{
     .logo{
         height: 6rem;
         width: 8rem;
+        margin-bottom: 2rem;
     }
+    .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    }
     p{
-        font-size: xx-small;
+        font-size: small;
         font-family: 'Lato', sans-serif;
     }
     ul{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
         padding: 0 1rem;
     }
@@ -48,6 +52,7 @@ footer{
         color: #a4a4a1;
     }
     .derechos p,span{
+        font-size: smaller;
         font-family:  'Lato',sans-serif;
         color: #a4a4a1;
     }
@@ -84,12 +89,4 @@ footer{
               transform: rotateY(360deg);
         }
     }
-    @media screen and (min-width: 768px){
-                 align-items: flex-start;
-            .footer{
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-        }
-}
 }
